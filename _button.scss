@@ -184,11 +184,11 @@ button.button-link {
 	}
 
 	&:disabled {
-		color: mix($fg-color, $bg-color, 50);
+		color: mix($fg-color, $bg-color, 50%);
 		cursor: not-allowed;
 
 		body.no-touch &:hover {
-			color: mix($fg-color, $bg-color, 50);
+			color: mix($fg-color, $bg-color, 50%);
 		}
 	}
 }
@@ -209,10 +209,10 @@ button.button-link {
 				}
 
 				&:disabled {
-					color: mix(map-val($schemes, $scheme, fg-color), map-val($schemes, $scheme, bg-color), 50);
+					color: mix(map-val($schemes, $scheme, fg-color), map-val($schemes, $scheme, bg-color), 50%);
 
 					body.no-touch &:hover {
-						color: mix(map-val($schemes, $scheme, fg-color), map-val($schemes, $scheme, bg-color), 50);
+						color: mix(map-val($schemes, $scheme, fg-color), map-val($schemes, $scheme, bg-color), 50%);
 					}
 				}
 			}
